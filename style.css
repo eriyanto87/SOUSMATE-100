@@ -1,0 +1,155 @@
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cormorant+Garamond:wght@700&display=swap');
+    a {
+        text-decoration: none;
+    }
+
+    body{
+        background-color: orange;
+        color: #000080;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    header {
+        display: flex;
+    }
+   
+    h1 {
+        font-size: 35px;    
+        font-weight: 900;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #timerWrapper {
+        display: block;
+        font-size: 20px;
+        background-color: white;
+        bottom: 0;
+        right: 0;
+        padding: 2em;
+        border-radius: 5px;
+        position: fixed;
+    }
+
+    .banana-bread {
+        padding-right: 20px;
+     }
+    .box {
+    text-align: center;
+    background-color: #07bf4e;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: 135px;
+    padding: 20px;
+    }
+    .column {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .comments {
+        padding: 30px;
+    }
+    .contact-us {
+        text-align: center;
+    }
+    .copyright {
+        text-align: center;
+    }
+    .form {
+        background-color: #07bf4e;
+        border-radius: 5px;
+        padding: 30px;
+        width: 35%;
+        margin-left: 380px;
+    }
+
+    .info {
+        padding: 5px;
+    }
+   
+    .instructions {
+        margin-right: 20px;
+    }
+    .italicize {
+        font-style: italic;
+    }
+    .label {
+        vertical-align: text-top;
+    }
+    .mailing {
+        padding: 5px;
+        border-radius: 3px;
+    }
+    .mailing-list {
+        text-align: center;
+        font-weight: 900;
+        text-shadow: 3px 1px white;
+    }
+
+    .nav1 {
+        display: inline-block;
+        font-size: 28px;
+        padding: 0px 20px 0px 20px; 
+    }
+
+    .nav {
+        display: inline-block;
+        font-size: 28px;
+        padding: 0px 20px 0px 20px; 
+        border-right: 2px solid black;
+    }
+    .overlay {
+        background: #edeaea;
+        position: absolute;
+        top: 595px;
+        left: 500px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .pretty-food {
+        background-size: cover;
+        height: 500px;
+        margin-left: 300px;
+    }
+    .recipe {
+        background-color: #07bf4e;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+     }
+     .recipe-box {
+         background-color: #07bf4e;
+         padding: 20px 10px;
+         margin-right: 20px;
+         margin-left: 20px;
+     }
+     .recipe-button {
+        padding: 10px;
+        margin-left: 200px;
+        border-radius: 5px;
+        background-color: yellow;
+    }
+   
+    .recipe-button:hover {
+        background-color: red;
+    }
+    .recipe-title {
+        text-shadow: 2px 1px white;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .red {
+        color: red;
+    }
+   
+    .submit {
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .ul-footer {
+    list-style: none;
+    }
