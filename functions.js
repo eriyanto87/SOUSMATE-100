@@ -1,7 +1,4 @@
-//function random() {
-//Math.floor(Math.random()*x);
-//}
-
+//object
 var recipes = [
     {
         id: 1,
@@ -14,18 +11,18 @@ var recipes = [
             "Bake at 350 degrees F (175 degrees C) for 1 hour, or until a wooden toothpick inserted in the center comes out clean.",          
             ], 
         prepTime: 15,
-        cookTime: 60,
+        cookTime: 60, 
         yield: "2 - 7x3 inch loaves",
         level: 1,
-        ingredients: [
+        ingredients: [ 
             "1 ½ cups all-purpose flour", 
             "1 teaspoon baking soda", 
             "½ teaspoon salt", 
             "1 cup white sugar", 
             "2 eggs, beaten", 
             "¼ cup butter, melted", 
-            "3 bananas, mashed"
-        ],
+            "3 bananas, mashed" 
+        ], 
         author: "Nikki", 
         imagePath: "https://www.allrecipes.com/recipe/6687/banana-bread/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%202"
     }, 
@@ -155,7 +152,7 @@ function loadRecipes() {
                         instructionsList.appendChild(instructionsSteps);
                 }
 
-                //create button
+                //create buttons
                 var button = document.createElement("button");
                 button.setAttribute("id", i);
                 button.style.padding = "10px 10px";
@@ -167,13 +164,31 @@ function loadRecipes() {
                     bindTimer(i.target.id)
                 };
                 section.appendChild(button);
-        }
-}  
+            
+                var reset = document.createElement("button");
+                reset.setAttribute("id", "reset");
+                reset.style.padding = "10px 10px";
+                reset.style.borderRadius = "5px";
+                reset.innerHTML = "RESET/STOP TIMER";
+                reset.onclick = function() {
+                    location.reload();
+                }
+                section.appendChild(reset);
+                
+                //user experience
+                var warning = document.createElement("p");
+                warning.style.color = "#d60614";
+                warning.innerHTML = "*You will need to click on reset button if you want to start on a new recipe. <br> You cannot start on two recipes at the same time."
+                section.appendChild(warning);
+            }  
 
+}
+
+//timer box and function
 function bindTimer(i)  {
             var recipe = recipes[i]
 
-                //add recipe name to timer
+                //add recipe name to timer   
                 var timerName = document.getElementById("timerName");
                 timerName.innerHTML = recipe.name;
                 
@@ -195,3 +210,4 @@ function bindTimer(i)  {
         }, 1000);
 }   
 
+        
